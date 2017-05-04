@@ -1,0 +1,72 @@
+.ghost-button{
+	float:left;
+	width:120px;
+	height:150px;
+	margin:20px 0 0 20px;
+	position:relative;
+}
+.icon{
+	display: inline-block;
+	width: 102px;
+	height: 98px;
+	margin:0 auto;
+	transition:all 1s;
+}
+.icon:hover{
+	transform: rotate(360deg) scale(1.2);
+}
+.button{
+	display:inline-block;
+	height:40px;
+	width:100px;
+	margin:0 auto;
+	border:2px solid #ccc;
+	text-align: center;
+	line-height: 40px;
+	color:#2DCB70;
+	text-decoration: none;
+	font-size:28px;
+	font-weight: bold;
+}
+.line{
+	display: block;
+	position:absolute;
+	background: white;
+	transition:all 0.2s linear;
+}
+.line.line-top{
+	height:2px;
+	width:0;
+	margin: -1px 0 0 -100px;
+}
+.line.line-bottom{
+	height:2px;
+	width:0;
+	margin: 40px 0 0 200px;
+}
+.line.line-left{
+	width:2px;
+	height:0;
+	margin: 80px 0 0 -2px;
+}
+.line.line-right{
+	width:2px;
+	height:0;
+	margin: -40px 0 0 100px;
+}
+.button:hover .line.line-right{
+	height:42px;
+	transform: translateY(40px);
+}
+.button:hover .line.line-left{
+	height:42px;
+	transform: translateY(-81px);
+}
+.button:hover .line.line-top{
+	width:102px;
+	transform: translateX(100px);
+}
+.button:hover .line.line-bottom{
+	width:102px;
+	transform: translateX(-200px);
+}
